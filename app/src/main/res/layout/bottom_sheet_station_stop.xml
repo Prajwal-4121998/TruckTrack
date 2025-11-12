@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_bottomsheet_rounded">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel Station"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration: 2 min"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFuelAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel Filled: 00.0 L"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTotalFuelPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Fuel Price: 00.00"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:backgroundTint="@color/yellowColor"
+        android:text="@string/continue_string"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/_14ssp" />
+</LinearLayout>

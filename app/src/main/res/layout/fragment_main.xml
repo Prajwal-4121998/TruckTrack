@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.main.MainFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_update_trip_status"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:backgroundTint="@color/yellowColor"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="@dimen/_14sdp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_end_trip"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:backgroundTint="@color/yellowColor"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="@dimen/_14sdp"
+        android:visibility="gone"/>
+
+</FrameLayout>

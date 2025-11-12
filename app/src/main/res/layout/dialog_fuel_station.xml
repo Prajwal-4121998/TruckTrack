@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_16sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_13sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iv_logo"-->
+        <!--            android:layout_width="@dimen/_75sdp"-->
+        <!--            android:layout_height="@dimen/_75sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp"-->
+        <!--            android:contentDescription="@string/app_name"-->
+        <!--            android:src="@drawable/ic_pick_gallery" />-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/have_we_paused_our_trip_to_fill_the_truck_with_fuel"
+            android:textSize="@dimen/_16ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="#DDDDDD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="#DDDDDD" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
